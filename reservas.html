@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="recursos/imagenes/favicon.svg"
+            type="image/x-icon">
+        <title>AW1</title>
+
+        <link rel="stylesheet" href="./recursos/css/index.css">
+        <link rel="shortcut icon" href="./recursos/imagenes/favicon.svg" type="image/x-icon">
+    </head>
+    <body>
+        <header class="cabecera-principal">
+            <a href="./">
+                <img src="recursos/imagenes/logo-cafe.svg" alt="Logo La Tacita">
+            </a>
+            <nav>
+                
+                <a href="index.html">Inicio</a>
+                <a href="reservas.html">Reservas</a>
+            
+            </nav>
+        </header>
+        <main class="contenido-principal">
+            <img src="./recursos/imagenes/tazas.jpg" class="imagen-principal" alt="Taza de Cafe Y Medialunas en Taita de Cafe">
+            <section class="seccion-reservas">
+                <h1>Reserva mesa</h1>
+                <p>
+                    Reservá tu mesa. Te esperamos!
+                </p>
+                <form class="formulario-reservas" method="post" action="http://127.0.0.1:5500/reservas.html">
+
+                    <label for="nombre">
+                        Nombre
+                    </label>
+                    <input id="nombre" type="text" name="nombre" />
+                    
+                    <br>
+
+                    <label for="dia">
+                        Día
+                    </label>
+                    <input id="dia" type="date" name="dia" />
+                    <br>
+
+                    <label for="hora">
+                        Hora
+                    </label>
+                    <input id="hora" type="time" name="hora" />
+                    <br>
+
+                    <label for="email">
+                        Email
+                    </label>
+                    <input id="email" type="email" name="email"/>  
+                    <br>
+
+                    <label for="comentarios">
+                        comentarios
+                    </label>
+                    <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+                    <br>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
+        <footer class="pie-principal">
+            <ul>
+                <li>Tacita de Café 2024</li>
+                <li>tacita@mail.com</li>
+                <li><a href="https://instagram.com/tacitadecafe"><img src="./recursos/imagenes/ig.svg" alt=""></a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
